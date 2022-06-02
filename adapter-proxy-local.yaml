@@ -19,7 +19,6 @@ cloud :
       access-key : test
       secret-key : test
     sns :
-      announcement-topic :
-        arn : arn:aws:sns:us-east-1:000000000000:announcement-topic
-        name : announcement-topic
+      arn : arn:aws:sns:us-east-1:000000000000:announcement-topic
+      name : announcement-topic
       endpoint : http://localhost:4566
