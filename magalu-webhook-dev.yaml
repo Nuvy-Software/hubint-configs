@@ -1,0 +1,19 @@
+app :
+  version : '@project.version@'
+  api :
+    title : HubInt-Application API DESENVOLVIMENTO
+
+cloud :
+  aws :
+    stack :
+      auto : false
+    region :
+      static : us-east-1
+      auto : false
+    credentials :
+      access-key : test
+      secret-key : test
+    sns :
+        arn : arn:aws:sns:us-east-1:000000000000:announcement-topic
+        name : announcement-topic
+        endpoint : http://localhost:4566
