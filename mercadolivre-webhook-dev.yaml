@@ -16,3 +16,5 @@ cloud :
         arn : arn:aws:sns:us-east-1:000000000000:announcement-topic
         name : announcement-topic
         endpoint : http://localhost:4566
+    end-point:
+      uri: http://localhost:4566/000000000000/webhook-ml
