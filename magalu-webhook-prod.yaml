@@ -2,7 +2,6 @@ app :
   version : '@project.version@'
   api :
     title : HubInt-Application API PRODUÇÃO
-
 cloud :
   aws :
     stack :
