@@ -8,6 +8,11 @@ app :
   api :
     title : HubInt-Application API LOCAL
 
+eureka:
+  client:
+    service-url:
+      defaultZone: 'http://localhost:8761/eureka'
+
 cloud :
   aws :
     stack :
