@@ -8,17 +8,22 @@ app :
   api :
     title : HubInt-Application API DESENVOLVIMENTO
 
+eureka:
+  client:
+    service-url:
+      defaultZone: 'http://eureka-server.eureka-server.svc.cluster.local:8761/eureka'
+
 cloud :
   aws :
     stack :
       auto : false
     region :
-      static : us-east-1
+      static : ${AWS_REGION}
       auto : false
     credentials :
-      access-key : test
-      secret-key : test
+      access-key : ${AWS_ACCESS_KEY}
+      secret-key : ${AWS_SECRET_KEY}
     sns :
-        arn : arn:aws:sns:us-east-1:000000000000:announcement-topic
+        arn : arn:aws:sns:us-east-1:236213915548:announcement-topic
         name : announcement-topic
         endpoint : http://localhost:4566
